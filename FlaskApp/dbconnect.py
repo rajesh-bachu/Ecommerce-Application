@@ -1,10 +1,10 @@
 import MySQLdb
 
 def connection():
-    conn = MySQLdb.connect(host="pythonprogramming.ckdqzljpe2py.us-east-1.rds.amazonaws.com",
-                           user = "root",
+    conn = MySQLdb.connect(host="rdsdb",
+                           user = "user",
                            passwd = "password",
-                           db = "pythonprogramming")
+                           db = "Dbname")
     c = conn.cursor()
 
     return c, conn
