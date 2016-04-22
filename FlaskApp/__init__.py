@@ -23,7 +23,7 @@ TOPIC_DICT = Content()
 
 app = Flask(__name__)
 
-red=redis.StrictRedis(host = 'rbcachecluster.sqjbuo.0001.use1.cache.amazonaws.com',port = 6379, db = 0)
+red=redis.StrictRedis(host = 'redisdb',port = 6379, db = 0)
 
 
 @app.route('/')
